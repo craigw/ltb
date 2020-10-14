@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+$stdout.sync = true
+$stdout.print $stdin.readline.chomp
+loop do
+  $stdout.print "\n#{$stdin.readline.chomp}"
+end
