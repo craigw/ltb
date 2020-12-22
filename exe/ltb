@@ -3,5 +3,9 @@
 $stdout.sync = true
 $stdout.print $stdin.readline.chomp
 loop do
+  if $stdin.eof?
+    $stdout.print "\n"
+    exit 0
+  end
   $stdout.print "\n#{$stdin.readline.chomp}"
 end
